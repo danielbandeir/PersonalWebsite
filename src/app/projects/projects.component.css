@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat:100');
+
+
+.blankSpace{
+  background-color: rgba(255, 76, 89, 1);
+  height: 10vh;
+}
+
+
+.headerProject{
+  background-color: black;
+  height: 80vh;
+  width: 100%;
+}
+
+.headerProject h1{
+  text-align: center;
+  padding-top: 40vh;
+  color: white;
+  font-size:7vh;
+  letter-spacing: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.headerProject h1::first-letter{
+  color: rgba(255, 76, 89, 1);
+}
+
+.headerProject h2{
+  text-align: center;
+  color: white;
+  font-size:2vh;
+  letter-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main{
+  width: 100%;
+  background-color: black;
+}
+
+.content{
+  width: 80%;
+  background-color: rgba(255, 76, 89, 1);
+  margin-left: 10%;
+}
+
+.displayContent{
+  display: grid;
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh;
+}
+
+.displayContent img{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+.displayContent h1{
+  font-size:3vh;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20vh;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  text-align: center;
+}
+
+.displayContent h2{
+  grid-column: 2/3;
+  grid-row: 1/3;
+  font-size:1.3vh;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 28vh;
+  text-align: center;
+}
+
+.displayContent a{
+  border: 1px solid transparent;
+  border-radius: 90px;
+  color:white;
+  width: 150px;
+  height: 30px;
+  background-color: rgba(255, 76, 89, 1);
+  font-style: none;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  font-size:20px;
+  letter-spacing: 1px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 42vh;
+  margin-left: 30%;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media(max-width:1025px){
+
+  .displayContent{
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25vh 25vh;
+  }
+
+  .displayContent img{
+    grid-column: 1/3;
+    object-fit: cover;
+    width: 100%;
+    height: 25vh;
+  }
+
+  .displayContent h1{
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .displayContent h2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    font-size:1.8vh;
+  }
+
+  .displayContent a{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    font-size:20px;
+    margin-left: 30%;
+  }
+
+}
+
+.blackspace{
+  height: 20vh;
+  width: 100%;
+  background-color: black;
+}

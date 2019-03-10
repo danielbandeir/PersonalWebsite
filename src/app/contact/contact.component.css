@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat:100');
+
+
+.contactMe{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-rows: 30vh 30vh 30vh 10vh;
+}
+
+
+.contactHeader{
+  background-color: rgba(255, 76, 89, 1);
+  grid-column: 1/5;
+  grid-row: 1/3;
+}
+
+.contactHeader h1{
+  padding-top: 5%;
+  color: white;
+  font-size: 5vw;
+  letter-spacing: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media(max-width:1025px){
+  .contactHeader{
+    font-size: 12vw;
+    padding-top: 20%;
+  }
+}
+
+.contactFooter{
+  grid-row: 3/5;
+  grid-column: 1/5;
+  background-color: black;
+}
+
+.contactForm{
+  background-color: white;
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+
+.contactFormImage{
+  background-image: url("../../assets/images/contact.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+
+
+#nameContactMe{
+  margin: 12px;
+  margin-top: 40px;
+  width: 100%;
+  border: transparent;
+  border-bottom: 1px solid black;
+  font-size: 1vw;
+  outline: none;
+}
+
+#emailContactMe{
+  margin: 12px;
+  width: 100%;
+  border: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1vw;
+  color: black;
+}
+
+#telPlace{
+  margin: 12px;
+  width: 100%;
+  border: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1vw;
+}
+
+
+#empresaPlace{
+  margin: 12px;
+  width: 100%;
+  border: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1vw;
+}
+
+#textContent{
+  margin: 12px;
+  width: 100%;
+  height: 15vh;
+  border: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1vw;
+}
+
+button{
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(255, 76, 89, 1);
+    border: none;
+    color: white;
+    height: 40px;
+    border: 1px solid rgba(255, 76, 89, 1);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+button:hover{
+    background-color: transparent;
+    color: black;
+}
+
+
+@media (max-width:800px){
+  button{
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+}
+

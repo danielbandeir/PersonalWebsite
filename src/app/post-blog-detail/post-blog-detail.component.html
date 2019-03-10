@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<header class="detailHead">
+        <img src="{{ (postDetail | async)?.foto1 }}" alt="">
+      </header>
+  
+      <main>
+        <h3 class="container">{{ (postDetail | async)?.nome }}</h3>
+        <div class="lineContentMain"></div>
+  
+        <div class="contentMain container">
+          <h2>{{ (postDetail | async)?.text }}</h2>
+        </div>
+  
+      <div class="blankSpaceDetail"></div>
+      </main>
+  
+<app-notices></app-notices>
+<app-footer></app-footer>

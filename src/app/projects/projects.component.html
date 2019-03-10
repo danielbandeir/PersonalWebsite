@@ -1,0 +1,39 @@
+<header>
+
+  <app-navbar></app-navbar>
+
+  <header class="headerProject">
+    <h1>PROJETOS</h1>
+    <h2>| C/C++ | Java | Python | TypeScript | Javascript |</h2>
+  </header>
+
+  <main>
+    <div class="content">
+
+
+      <div class="blankSpace"></div>
+      <div class="displayContent" *ngFor="let project of projects | async">
+        <img src={{project.foto1}} alt="">
+        <h1>{{ project.nome }}</h1>
+        <h2>{{ project.linguagem }}</h2>
+        <a [routerLink]="['/projetos/',project.id]">Leia Mais</a>
+        <div class="blankSpace"></div>
+      </div>
+
+
+
+
+
+
+
+    <div class="blankSpace"></div>
+    <div class="blackspace"></div>
+    </div>
+  </main>
+
+
+  <app-notices></app-notices>
+
+  <app-footer></app-footer>
+
+</header>

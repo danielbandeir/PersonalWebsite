@@ -1,0 +1,105 @@
+<app-navbar></app-navbar>
+
+
+
+<div class="contentHeader">
+    <div class="Hi">
+        <h1>DEVELOP YOUR WORLD</h1>
+    </div>
+    <div id="read">&rsaquo;</div>
+</div>
+
+
+<div id="contentA">
+    <div class="row w-100">
+        <div class="col-lg-6 col-12 aboutImage">
+        </div>
+        <div class="col-lg-6 col-12 aboutMeText container">
+            <h1>Olá,</h1>
+            <h2>Eu sou Daniel Bandeira<div class="point">.</div></h2>
+            <div class="btnReadMore "><a routerLink="/sobre" routerLinkActive="active">Leia sobre mim</a></div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="projects">
+    <div class="row "  style="margin: auto">
+        <div class="col-lg-6 col-sm-12 projectLabel" *ngFor="let project of projectsDetail | async">
+            <img src="{{project.foto1}}" alt="">
+            <div class="spaceContent displayContent">
+                <h2>{{project.nome}}</h2>
+                <h5>{{project.linguagem}}</h5>
+                <a [routerLink]="['projetos/', project.id]">Veja</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="blankSpace"></div>
+
+<div class="post" style="background-color: black;">
+    <div class="row" style="margin: auto;">
+ 
+    <main class="container">
+        <div class="col-lg-4 col-sm-12" *ngFor="let post of postDetail | async">
+
+
+            <div class="cardPost">
+                <div class="imgCardPost">
+                    <img src="{{post.foto1}}" alt="{{post.nome}}">
+                </div>
+                <div class="titleCardPost container">
+                    <h1><b>{{post.nome}}</b></h1>
+                </div>
+                <div class="categoriaCardPost container">
+                    <h2>{{post.categoria}}</h2>
+                </div>
+                <div class="descricaoCardPost container">
+                    <h3>{{post.desc}}</h3>
+                </div>
+                <a [routerLink]="['blog/', post.id]" class="seePost">-></a>
+            </div>
+
+
+        </div>
+    </main>
+    </div>
+</div>
+
+
+<div class="blankSpace"></div>
+
+<div id="whatIDo">
+    <div class="row w-100">
+        <div class="col-lg-1 col-0"></div>
+        <div class="col-lg-4  col-6"><h1>O que eu faço?</h1></div>
+        <div class="col-lg-6  col-6 lineWhat "></div>
+    </div>
+
+    <div class="blankSpace2"></div>
+    <div id="contentWhatIDo">
+        <div class="web">
+            <div class="imageField">
+            </div>
+            <div class="textField text-center"><h3>Web</h3></div>
+        </div>
+        <div class="design">
+            <div class="imageField2"></div>
+            <div class="textField2 text-center"><h3>Design</h3></div>
+            </div>
+        <div class="prototype">
+            <div class="imageField3"></div>
+            <div class="textField3 text-center"><h3>Prototype</h3></div>
+            </div>
+        </div>
+    </div>
+
+<div class="blankSpace2"></div>
+
+<app-notices></app-notices>
+<app-footer></app-footer>
+

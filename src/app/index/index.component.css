@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:500|KoHo:600');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Thasadith');
+
+
+
+
+
+html, body{
+    
+    max-width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+.blankSpace{
+    background-color: rgb(0, 0, 0);
+    height: 30vh;
+}
+
+.blankSpace2{
+    background-color: rgb(0, 0, 0);
+    height: 15vh;
+}
+
+.lowBlankSpace{
+    background-color: rgb(0, 0, 0);
+    height: 40vh;
+}
+
+.contentHeader{
+    background-image: url('../../assets/images/parallax.jpg');
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Hi{
+    width: 50%;
+    height: 10vh;
+}
+
+.Hi h1{
+    padding-top:20vh;
+    color: white;
+    font-size: 7em;
+}
+
+@media screen and (max-width:300px){
+    .Hi h1{
+        padding-top: 30vh;
+        font-size: 2em;
+    }
+}
+
+@media (max-width:1024px){
+    .Hi h1{
+        padding-top: 30vh;
+        font-size: 4em;
+    }
+}
+
+
+#read{
+    z-index: 1;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: rotate(90deg);
+    font-size: 100px;
+    color: white;
+    animation: arrow 1s infinite;
+}
+#read a{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes arrow{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 10px;
+    }
+    100%{
+        bottom: 0px;;
+    }
+}
+
+
+#contentA{
+    height: 130vh;
+    background-color: #000;
+}
+
+.aboutImage{
+    background-image: url('../../assets/images/me.jpeg');
+    opacity: 0.8;
+    transform: scale(0.65);
+    border: 1px solid transparent;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+}
+
+.aboutMeText h1{
+    font-family: 'KoHo', sans-serif;
+    margin-top: 30vh;
+    font-size: 90px;
+    color: rgba(255, 255, 255, .9);
+}
+
+
+.aboutMeText h2{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3em;
+    color: rgba(255, 255, 255, .9);
+}
+
+@media (max-width:500px){
+    .aboutMeText h1{
+        margin-left: 10%;
+        margin-top: 40vh;
+        font-size: 40px;
+    }
+
+    #read{
+        font-size: 50px;
+    }
+
+    .aboutMeText h2{
+        margin-left: 10%;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 5em;
+        color: rgba(255, 255, 255, .9);
+    }
+
+}
+
+@media (max-width:800px){
+    .aboutMeText h1{
+        margin-left: 10%;
+        margin-top: 50vh;
+        font-size: 90px;
+    }
+
+    .aboutMeText h2{
+        margin-left: 10%;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 50px;
+        color: rgba(255, 255, 255, .9);
+    }
+
+}
+
+.point{
+    display: inline;
+    font-size: 1em;
+    color: aquamarine;
+}
+
+.btnReadMore{
+    margin: 0 auto;
+    margin-top: 20vh;
+    position: relative;
+    width: 300px;
+    height: 70px;
+    background-color: rgba(255, 76, 89, 1);
+    border: 1px solid  rgba(255, 76, 89, 1);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+.aboutMeText a{
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.col-lg-6{
+    padding-right: 0; /*15px in bootstrap.css*/
+    padding-left: 0;  /*idem*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cardPost{
+    box-shadow: 0 0 8px white;
+    position: relative;
+    height: 70vh;
+    background-color: white;
+}
+
+.imgCardPost{
+    width: 100%;
+    height: 40vh;
+}
+
+.imgCardPost img{
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.titleCardPost{
+    margin-top: 5vh;
+    height: 5vh;
+    width: 100%;
+}
+
+.titleCardPost h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.categoriaCardPost{
+    height: 5vh;
+    width: 100%;
+}
+
+.categoriaCardPost h2{
+    font-family: 'Thasadith', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.descricaoCardPost{
+    height: 8vh;
+    width: 100%;
+}
+
+.descricaoCardPost h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+
+.cardPost a{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(255, 76, 89, 1);
+    color: white;
+    height: 40px;
+    width: 40px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+
+.projectLabel{
+    width: 100%;
+    height: 50vh;
+}
+
+.projectLabel img{
+    display: block;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease-in-out;
+}
+
+.projectLabel img:hover{
+    filter: grayscale(100%);
+}
+
+.projectLabel:hover .spaceContent{
+    width: 60%;
+}
+
+.spaceContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 0%;
+    overflow: hidden;
+    background-color: rgba(255, 76, 89, 1);
+    transition: 0.5s ease;
+}
+
+.spaceContent h2{
+    font-family: 'KoHo', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.spaceContent h5{
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 10vh;
+}
+
+.spaceContent a{
+    margin-left: 15%;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    padding-top: 7px;
+    text-align: center;
+    display: block;
+    border: 1px solid white;
+    height: 50px;
+    width: 200px;
+    transition: 0.4s ease-in-out;
+}
+
+.spaceContent a:hover{
+    color: rgba(255, 76, 89, 1);
+    background-color: white;
+    width: 230px;
+}
+
+
+@media (max-width:900px){
+    .spaceContent{
+        width: 50%;
+    }
+    .spaceContent a{
+        margin-left: 5%;
+        color: rgba(255, 76, 89, 1);
+        background-color: white;
+    }
+}
+
+.seePost{
+    color: white;
+    background-color: rgba(255, 76, 89, 1);
+    width: 125px;
+    height: 50px;
+    padding-top: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+#whatIDo{
+    background-color: rgba(0, 0, 0, 1);
+    height: 110vh;
+}
+
+.lineWhat{
+    height: 1px;
+    margin-top: 5%;
+    background-color: white;
+}
+
+#whatIDo h1{
+    color: white;
+    font-size: 4em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#contentWhatIDo{
+    display: grid;
+    grid-template-rows: 50vh;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.web{
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.web:hover{
+    filter: grayscale(0);
+}
+
+
+.imageField{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image:    url('../../assets/images/web.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.textField{
+    width: 80%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 10vh;
+    background-color: rgba(255, 76, 89, 1);
+    opacity: .7;
+}
+
+.textField h3{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 80px;
+    color: white;
+}
+
+.design{
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-color: aqua;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.design:hover{
+    filter: grayscale(0);
+}
+
+.imageField2{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image:    url('../../assets/images/design.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.textField2{
+    width: 80%;
+    position: absolute;
+    top: 130px;
+    right: 20;
+    height: 10vh;
+    background-color: rgb(76, 174, 255);
+    opacity: .7;
+}
+
+.textField2 h3{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 70px;
+    color: white;
+}
+
+
+.prototype{
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 4/5;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.prototype:hover{
+    filter: grayscale(0);
+}
+
+.imageField3{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image:    url('../../assets/images/prototype.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.textField3{
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    height: 10vh;
+    background-color: rgb(76, 255, 100);
+    opacity: .7;
+}
+
+.textField3 h3{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+@media (max-width:800px){
+    #whatIDo{
+        background-color: rgba(0, 0, 0, 1);
+        height: 250vh;
+    }
+
+    #whatIDo h1{
+        font-size: 2em;
+    }
+
+    #contentWhatIDo{
+        display: grid;
+        grid-template-rows: 50vh 50vh 50vh;
+        grid-template-columns: 20% 60% 20%;
+        grid-row-gap: 10px;
+    }
+
+    .web{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        filter: grayscale(0);
+        transition: 1s;
+    }
+
+    .design{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        filter: grayscale(0);
+        transition: 1s;
+    }
+
+    .prototype{
+        grid-row: 3/4;
+        grid-column: 2/3;
+        filter: grayscale(0);
+        transition: 1s;
+    }
+
+
+}

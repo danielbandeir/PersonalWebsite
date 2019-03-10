@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat:100');
+
+.blankSpaceDetail{
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+}
+
+.detailHead{
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+.detailHead img{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.detailHead h1{
+  position: absolute;
+  top: 50%;
+  font-size:8vw;
+  letter-spacing: 4px;
+  color: rgba(255, 76, 89, 1);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main{
+  background-color: black;
+  width: 100%;
+}
+
+main h1{
+  padding: 5vh;
+  color: white;
+  font-size:8vh;
+  letter-spacing: 4px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main h1::first-letter{
+  color: rgba(255, 76, 89, 1);
+}
+
+.lineContentMain{
+  width: 60%;
+  height: 0.5vh;
+  background-color: rgba(255, 76, 89, 1);
+}
+
+
+.contentMain h2{
+  padding: 5vh;
+  font-size: 2.2vh;
+  color: white;
+  letter-spacing: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  word-wrap: break-word;
+}
+
+main .one{
+  width: 60%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+main .two{
+  width: 60%;
+  float: right;
+  height: 30vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+main h1{
+  padding: 5vh;
+  color: white;
+  font-size:8vh;
+  letter-spacing: 4px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+main h1::first-letter{
+  color: rgba(255, 76, 89, 1);
+}
+
+.lineContentMainTwo{
+  float: right;
+  width: 60%;
+  height: 0.5vh;
+  background-color: rgba(255, 76, 89, 1);
+}
+
+
+.contentMainTwo h2{
+  padding: 5vh;
+  font-size: 2.2vh;
+  color: white;
+  letter-spacing: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  word-wrap: break-word;
+}
+
+
+
+.lineContentMainThree{
+  width: 60%;
+  height: 0.5vh;
+  background-color: rgba(255, 76, 89, 1);
+}
+
+
+.contentMainThree h2{
+  padding: 5vh;
+  font-size: 2.2vh;
+  color: white;
+  letter-spacing: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  word-wrap: break-word;
+}

@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+
+<div>
+      <header class="detailHead">
+        <img src="{{ (postDetail | async)?.foto1 }}" alt="">
+        <h1 class="container">{{ (postDetail | async)?.nome }}</h1>
+      </header>
+  
+      <main>
+        <h1 class="container">Sobre o projeto</h1>
+        <div class="lineContentMain"></div>
+  
+        <div class="contentMain container">
+          <h2>{{ (postDetail | async)?.sobre }}</h2>
+        </div>
+  
+        <img src="{{ (postDetail | async)?.foto2 }}" alt="" class="one"/>
+  
+        <h1 class="container contentTwo">Objetivo</h1>
+        <div class="lineContentMainTwo"></div>
+  
+        <div class="contentMainTwo container">
+          <h2>{{ (postDetail | async)?.objetivo }}</h2>
+        </div>
+  
+  
+        <img src="{{ (postDetail | async)?.foto3 }}" alt="" class="two"/>
+  
+        <h1 class="container contentThree">Desafio</h1>
+        <div class="lineContentMainThree"></div>
+  
+        <div class="contentMainThree container">
+          <h2>{{ (postDetail | async)?.desafio }}</h2>
+        </div>
+
+  
+        <div class="blankSpaceDetail"></div>
+</main>
+</div>  
+
+<app-notices></app-notices>
+<app-footer></app-footer>

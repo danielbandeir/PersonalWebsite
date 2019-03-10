@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+
+<header>
+  <div class="aboutMeContent"><h1>Quem sou eu?</h1></div>
+</header>
+<div *ngFor="let aboutMe of about | async">
+  <div class="aboutMeInit">
+  <div class="backgroundColor"></div>
+  <div class="profileInitPicture"></div>
+  <div class="lineInit"></div>
+  <div class="textInit">
+    <h1>Olá</h1>
+    <h2>Bem vindo ao meu site.</h2>
+    <h3>{{ aboutMe.intro1 }}</h3>
+    <h3>{{ aboutMe.intro2 }}</h3>
+  </div>
+  </div>
+
+  <div class="inspiracoes">
+
+  <div class="textInsp container">
+  <h1>INS</h1>
+  <h1>PIRA</h1>
+  <h1>ÇÕES</h1>
+  <div class="lineInsp"></div>
+  </div>
+
+  <div class="imgInsp"></div>
+  <div class="whiteBox">
+  <h1>{{ aboutMe.inspiracoes }}
+  </h1>
+  </div>
+
+  </div>
+
+  <div class="historia">
+  <h1 class="container">História</h1>
+  <h2 class="container">{{ aboutMe.historia }}</h2>
+  </div>
+</div>
+
+<div class="skills">
+<h1 class="container skills-h1">Skills</h1>
+<canvas id="chart"></canvas>
+</div>
+<div class="blankSpace3">
+
+</div>
+
+
+<app-notices></app-notices>
+<app-footer></app-footer>

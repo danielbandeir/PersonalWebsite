@@ -1,0 +1,37 @@
+<div class="container allFormSend">
+  <div class="row">
+    <form [formGroup]="addPost" (ngSubmit)="addItem()">
+        <div class="form-group">
+            <label for="username">Autor:</label>
+            <input type="text" formControlName="autor" placeholder="autor" name="autor" class="form-control" id="autor">
+        </div>
+        <div class="form-group">
+            <label for="username">Categoria:</label>
+            <input type="text" formControlName="categoria" placeholder="categoria" name="categoria" class="form-control" id="categoria">
+        </div>
+        <div class="form-group">
+            <label for="username">Data:</label>
+            <input type="date" formControlName="data" name="data" class="form-control" id="data">
+        </div>
+        <div class="form-group">
+            <label for="username">Nome post:</label>
+            <input type="text" formControlName="nome" name="nome" class="form-control" id="nome">
+        </div>
+        <div class="form-group">
+            <label for="username">Descrição</label>
+            <input type="textarea" formControlName="desc" placeholder="Descricao" name="desc" class="form-control" id="desc">
+        </div>
+        <div class="form-group">
+            <label for="username">Texto</label>
+            <input type="textarea" formControlName="text" placeholder="texto" name="text" class="form-control" id="text">
+        </div>
+        <div class="form-group">
+                <label for="username">Foto1</label>
+                <input type="text" formControlName="foto1" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-success" value="Postar">
+        </div>
+    </form>
+  </div>
+</div>
